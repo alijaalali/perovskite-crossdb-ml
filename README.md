@@ -23,4 +23,29 @@ Python 3, pandas, numpy, scikit-learn, scipy, xgboost, matminer, pymatgen, mp-ap
 
 ## Data
 
-Raw data (Materials Project API query results, Alexandria convex-hull archives) are not included here; scripts expect them in a local `data/` directory. See the manuscript's Data Availability statement. `build_mp_table.py` requires a Materials Project API key set as the `MP_API_KEY` environment variable.
+The `data/` folder in this repository contains the exact record identifiers and
+per-compound results needed to verify every number reported in the manuscript,
+without re-querying Materials Project or Alexandria:
+
+- `mp_training_records.csv` — all 1,684 Materials Project perovskite-oxide
+  records used for MP-internal training/testing, identified by their public
+  `material_id` (e.g. `mp-3346497`), with formula, space group, formation
+  energy per atom, band gap, and the `theoretical` flag as queried from the
+  Materials Project API.
+- `predictions_formation_energy_per_atom_{pbe,pbesol,scan}.csv` and
+  `predictions_band_gap_{pbe,pbesol,scan}.csv` — per-compound predicted vs.
+  true values for every Alexandria zero-shot transfer test reported in the
+  manuscript, identified by Alexandria record `id` (e.g. `agm002137945`) and
+  formula.
+- `metrics.json`, `benchmark_models.json` — the consolidated MAE/RMSE/R2
+  metrics (including transition-metal-subgroup breakdowns) underlying every
+  table and figure in the manuscript.
+
+To regenerate these from scratch rather than use the deposited files directly:
+raw bulk query results from the Materials Project API and the Alexandria
+convex-hull archives are not included here (they are large, third-party,
+and already fully public at their own sources); point the scripts below at a
+local `data/` directory populated by re-running `build_mp_table.py` (requires
+a free Materials Project API key set as the `MP_API_KEY` environment
+variable; see https://materialsproject.org) and `build_alexandria_tables.py`
+(pulls from the public Alexandria database, https://alexandria.icams.rub.de).
