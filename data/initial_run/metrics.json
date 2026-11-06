@@ -1,0 +1,96 @@
+{
+  "formation_energy_per_atom": {
+    "mp_internal_split": {
+      "n_train": 1348,
+      "n_test": 336,
+      "mae": 0.15279898471398332,
+      "rmse": 0.2771761254588727,
+      "r2": 0.8964087678653835
+    },
+    "alexandria_transfer": {
+      "pbe": {
+        "n_test": 241,
+        "mae": 0.09778165159281815,
+        "rmse": 0.1469569734120861,
+        "r2": 0.957337664987099,
+        "tm_confound": {
+          "n_transition_metal": 153,
+          "n_non_transition_metal": 88,
+          "mae_transition_metal": 0.09051317008371289,
+          "mae_non_transition_metal": 0.110418897852967
+        }
+      },
+      "pbesol": {
+        "n_test": 257,
+        "mae": 0.30900877881929034,
+        "rmse": 0.3261627705112684,
+        "r2": 0.8065779591633282,
+        "tm_confound": {
+          "n_transition_metal": 176,
+          "n_non_transition_metal": 81,
+          "mae_transition_metal": 0.2912128523994715,
+          "mae_non_transition_metal": 0.3476764707932178
+        }
+      },
+      "scan": {
+        "n_test": 275,
+        "mae": 0.14479147985261673,
+        "rmse": 0.18027024937830932,
+        "r2": 0.9481905029084963,
+        "tm_confound": {
+          "n_transition_metal": 185,
+          "n_non_transition_metal": 90,
+          "mae_transition_metal": 0.13098430891550344,
+          "mae_non_transition_metal": 0.17317288677890524
+        }
+      }
+    }
+  },
+  "band_gap": {
+    "mp_internal_split": {
+      "n_train": 1348,
+      "n_test": 336,
+      "mae": 0.39383969640573196,
+      "rmse": 0.6102618888774122,
+      "r2": 0.8220999700141518
+    },
+    "alexandria_transfer": {
+      "pbe": {
+        "n_test": 241,
+        "mae": 0.569081473882076,
+        "rmse": 0.8083417214366022,
+        "r2": 0.7152497932766857,
+        "tm_confound": {
+          "n_transition_metal": 153,
+          "n_non_transition_metal": 88,
+          "mae_transition_metal": 0.5595379063251068,
+          "mae_non_transition_metal": 0.5856742674754425
+        }
+      },
+      "pbesol": {
+        "n_test": 257,
+        "mae": 0.44430329159183374,
+        "rmse": 0.6020216912721752,
+        "r2": 0.8822366479377554,
+        "tm_confound": {
+          "n_transition_metal": 176,
+          "n_non_transition_metal": 81,
+          "mae_transition_metal": 0.4147442332877439,
+          "mae_non_transition_metal": 0.5085303812402266
+        }
+      },
+      "scan": {
+        "n_test": 275,
+        "mae": 0.6619163315924732,
+        "rmse": 0.8319367885684555,
+        "r2": 0.8232155109353824,
+        "tm_confound": {
+          "n_transition_metal": 185,
+          "n_non_transition_metal": 90,
+          "mae_transition_metal": 0.5481978589768345,
+          "mae_non_transition_metal": 0.8956709697468414
+        }
+      }
+    }
+  }
+}

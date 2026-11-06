@@ -1,0 +1,902 @@
+{
+  "canonical_space_group_retrain": {
+    "n_canonical": 1375,
+    "n_full": 1684,
+    "targets": {
+      "formation_energy_per_atom": {
+        "full_model": {
+          "pbe": {
+            "n": 241,
+            "mae": 0.09605899402489627,
+            "rmse": 0.14525484673161634,
+            "r2": 0.9583202132276202
+          },
+          "pbesol": {
+            "n": 257,
+            "mae": 0.30931154536964983,
+            "rmse": 0.32691152174536625,
+            "r2": 0.8056888863587542
+          },
+          "scan": {
+            "n": 275,
+            "mae": 0.14331626847272724,
+            "rmse": 0.17884750573260305,
+            "r2": 0.949005066116023
+          }
+        },
+        "canonical_model": {
+          "pbe": {
+            "n": 241,
+            "mae": 0.15471490045157785,
+            "rmse": 0.2608274575788301,
+            "r2": 0.8656087975313487
+          },
+          "pbesol": {
+            "n": 257,
+            "mae": 0.3081519838877732,
+            "rmse": 0.3301018250946544,
+            "r2": 0.8018778476645243
+          },
+          "scan": {
+            "n": 275,
+            "mae": 0.15461663315968352,
+            "rmse": 0.1957309675858478,
+            "r2": 0.9389226277975959
+          }
+        }
+      },
+      "band_gap": {
+        "full_model": {
+          "pbe": {
+            "n": 241,
+            "mae": 0.5783597659556016,
+            "rmse": 0.8165585275806724,
+            "r2": 0.7094313901966856
+          },
+          "pbesol": {
+            "n": 257,
+            "mae": 0.4482802094319066,
+            "rmse": 0.6070280509209568,
+            "r2": 0.8802698846440562
+          },
+          "scan": {
+            "n": 275,
+            "mae": 0.6577191323818182,
+            "rmse": 0.8228433732652305,
+            "r2": 0.8270590458518536
+          }
+        },
+        "canonical_model": {
+          "pbe": {
+            "n": 241,
+            "mae": 0.713843283633332,
+            "rmse": 1.018671803473765,
+            "r2": 0.5477874315317612
+          },
+          "pbesol": {
+            "n": 257,
+            "mae": 0.5054194292326237,
+            "rmse": 0.743313671489781,
+            "r2": 0.8204728561918817
+          },
+          "scan": {
+            "n": 275,
+            "mae": 0.7124373049473572,
+            "rmse": 0.9466438982354182,
+            "r2": 0.7711047508561694
+          }
+        }
+      }
+    }
+  },
+  "novel_subset_bootstrap_ci": {
+    "targets": {
+      "formation_energy_per_atom": {
+        "pbe": {
+          "n_novel": 31,
+          "point_estimate": {
+            "n": 31,
+            "mae": 0.15646611612903225,
+            "rmse": 0.2216241651064834,
+            "r2": 0.9086661842819003
+          },
+          "r2_bootstrap_ci95": [
+            0.7420017842013769,
+            0.9683003794656535
+          ],
+          "mae_bootstrap_ci95": [
+            0.10841475935483866,
+            0.21906610927419348
+          ]
+        },
+        "pbesol": {
+          "n_novel": 11,
+          "point_estimate": {
+            "n": 11,
+            "mae": 0.3136607572727272,
+            "rmse": 0.3351739066938719,
+            "r2": 0.726678834565901
+          },
+          "r2_bootstrap_ci95": [
+            0.2176582775219789,
+            0.8409441078617773
+          ],
+          "mae_bootstrap_ci95": [
+            0.24420663629545447,
+            0.38572903849999995
+          ]
+        },
+        "scan": {
+          "n_novel": 13,
+          "point_estimate": {
+            "n": 13,
+            "mae": 0.21165885153846148,
+            "rmse": 0.2598205426207622,
+            "r2": 0.9028331538572606
+          },
+          "r2_bootstrap_ci95": [
+            0.743425890655502,
+            0.9468471470647737
+          ],
+          "mae_bootstrap_ci95": [
+            0.13524257653846145,
+            0.2959129331538461
+          ]
+        }
+      },
+      "band_gap": {
+        "pbe": {
+          "n_novel": 31,
+          "point_estimate": {
+            "n": 31,
+            "mae": 0.9138723693548386,
+            "rmse": 1.11014550787459,
+            "r2": 0.5638687054746305
+          },
+          "r2_bootstrap_ci95": [
+            0.21119432513651998,
+            0.7594742510259762
+          ],
+          "mae_bootstrap_ci95": [
+            0.6988603931693547,
+            1.1453971660887092
+          ]
+        },
+        "pbesol": {
+          "n_novel": 11,
+          "point_estimate": {
+            "n": 11,
+            "mae": 0.5927032054545456,
+            "rmse": 0.7233105263740136,
+            "r2": 0.7625827520654632
+          },
+          "r2_bootstrap_ci95": [
+            -86.23015655784548,
+            0.8243762405950512
+          ],
+          "mae_bootstrap_ci95": [
+            0.3464350285454545,
+            0.853103098568181
+          ]
+        },
+        "scan": {
+          "n_novel": 13,
+          "point_estimate": {
+            "n": 13,
+            "mae": 0.6292394361538463,
+            "rmse": 0.8121793496807712,
+            "r2": 0.7025326070864693
+          },
+          "r2_bootstrap_ci95": [
+            0.09523911583880577,
+            0.7566271732105009
+          ],
+          "mae_bootstrap_ci95": [
+            0.38317446063461547,
+            0.9327663988269229
+          ]
+        }
+      }
+    }
+  },
+  "composition_grouped_cv": {
+    "targets": {
+      "formation_energy_per_atom": {
+        "fold_r2": [
+          0.9060042377036268,
+          0.9230115338214762,
+          0.8806594340163908,
+          0.9165634654315455,
+          0.9040469893489768
+        ],
+        "fold_mae": [
+          0.16155447816123172,
+          0.15506005176143745,
+          0.15815175539348952,
+          0.15258380224182086,
+          0.1487514261085738
+        ],
+        "mean_r2": 0.9060571320644033,
+        "std_r2": 0.014470116222405155,
+        "mean_mae": 0.15522030273331067,
+        "std_mae": 0.004416749326195179
+      },
+      "band_gap": {
+        "fold_r2": [
+          0.7061791628828866,
+          0.6958998056830763,
+          0.7962482709969875,
+          0.7145203115323959,
+          0.8183946011265445
+        ],
+        "fold_mae": [
+          0.46857728149442757,
+          0.478825476188474,
+          0.45505117762753833,
+          0.47570434367988357,
+          0.4175751516137737
+        ],
+        "mean_r2": 0.7462484304443782,
+        "std_r2": 0.05069962080203025,
+        "mean_mae": 0.45914668612081944,
+        "std_mae": 0.022339707261107098
+      }
+    }
+  },
+  "structural_feature_shift": {
+    "pbe": {
+      "n_matched": 383,
+      "pct_same_space_group": 43.34203655352481,
+      "mean_abs_volume_per_atom_pct_diff": 9.481665203324363,
+      "median_abs_volume_per_atom_pct_diff": 4.28873750495824,
+      "mean_abs_pseudocubic_lattice_const_diff_angstrom": 0.13148259555761807,
+      "median_abs_pseudocubic_lattice_const_diff_angstrom": 0.054526234833427445
+    },
+    "pbesol": {
+      "n_matched": 452,
+      "pct_same_space_group": 47.56637168141593,
+      "mean_abs_volume_per_atom_pct_diff": 6.1889289088123265,
+      "median_abs_volume_per_atom_pct_diff": 2.809693291823259,
+      "mean_abs_pseudocubic_lattice_const_diff_angstrom": 0.09925781422481571,
+      "median_abs_pseudocubic_lattice_const_diff_angstrom": 0.036631062003008585
+    },
+    "scan": {
+      "n_matched": 474,
+      "pct_same_space_group": 49.36708860759494,
+      "mean_abs_volume_per_atom_pct_diff": 6.1519560136530265,
+      "median_abs_volume_per_atom_pct_diff": 2.8580700870965003,
+      "mean_abs_pseudocubic_lattice_const_diff_angstrom": 0.0971375268294511,
+      "median_abs_pseudocubic_lattice_const_diff_angstrom": 0.03721096096794807
+    }
+  },
+  "cross_functional_paired_residual_comparison": {
+    "pbe_vs_pbesol": {
+      "formation_energy_per_atom": {
+        "n_matched_with_target": 146,
+        "mean_signed_residual_diff": 0.35957783061643833,
+        "mean_abs_residual_diff": 0.36279224705479446,
+        "median_abs_residual_diff": 0.36557074999999983,
+        "pct_same_space_group": 74.65753424657534
+      },
+      "band_gap": {
+        "n_matched_with_target": 146,
+        "mean_signed_residual_diff": -0.2988614296869863,
+        "mean_abs_residual_diff": 0.5124853356595891,
+        "median_abs_residual_diff": 0.16806178,
+        "pct_same_space_group": 74.65753424657534
+      }
+    },
+    "pbe_vs_scan": {
+      "formation_energy_per_atom": {
+        "n_matched_with_target": 152,
+        "mean_signed_residual_diff": 0.1035594319736842,
+        "mean_abs_residual_diff": 0.15898951881578943,
+        "median_abs_residual_diff": 0.13047864999999992,
+        "pct_same_space_group": 77.63157894736842
+      },
+      "band_gap": {
+        "n_matched_with_target": 152,
+        "mean_signed_residual_diff": 0.12344772726118425,
+        "mean_abs_residual_diff": 0.6515763172519736,
+        "median_abs_residual_diff": 0.5684619450000001,
+        "pct_same_space_group": 77.63157894736842
+      }
+    },
+    "pbesol_vs_scan": {
+      "formation_energy_per_atom": {
+        "n_matched_with_target": 225,
+        "mean_signed_residual_diff": -0.2550345162666667,
+        "mean_abs_residual_diff": 0.2552782904888889,
+        "median_abs_residual_diff": 0.2566771000000001,
+        "pct_same_space_group": 97.33333333333334
+      },
+      "band_gap": {
+        "n_matched_with_target": 225,
+        "mean_signed_residual_diff": 0.40198133553333326,
+        "mean_abs_residual_diff": 0.410267795,
+        "median_abs_residual_diff": 0.3987000000000003,
+        "pct_same_space_group": 97.33333333333334
+      }
+    }
+  },
+  "normalized_transfer_degradation": {
+    "targets": {
+      "formation_energy_per_atom": {
+        "XGBoost": {
+          "pbe": {
+            "internal_r2": 0.8959429515902053,
+            "external_r2": 0.9583202140447611,
+            "retained_r2_fraction": 1.069621913252225,
+            "internal_mae": 0.15011186652913913,
+            "external_mae": 0.09605899221195521,
+            "mae_inflation_ratio": 0.6399160468323709
+          },
+          "pbesol": {
+            "internal_r2": 0.8959429515902053,
+            "external_r2": 0.8056888878978592,
+            "retained_r2_fraction": 0.8992636043040971,
+            "internal_mae": 0.15011186652913913,
+            "external_mae": 0.30931154459681887,
+            "mae_inflation_ratio": 2.0605402607313295
+          },
+          "scan": {
+            "internal_r2": 0.8959429515902053,
+            "external_r2": 0.9490050664791164,
+            "retained_r2_fraction": 1.059224881221211,
+            "internal_mae": 0.15011186652913913,
+            "external_mae": 0.14331626893658891,
+            "mae_inflation_ratio": 0.9547297775340694
+          }
+        },
+        "RandomForest": {
+          "pbe": {
+            "internal_r2": 0.8824498305666462,
+            "external_r2": 0.9505837181950942,
+            "retained_r2_fraction": 1.0772099277130547,
+            "internal_mae": 0.1705439081617554,
+            "external_mae": 0.10485503278796819,
+            "mae_inflation_ratio": 0.6148271956364256
+          },
+          "pbesol": {
+            "internal_r2": 0.8824498305666462,
+            "external_r2": 0.8049161304045969,
+            "retained_r2_fraction": 0.9121381210847276,
+            "internal_mae": 0.1705439081617554,
+            "external_mae": 0.30687252475080257,
+            "mae_inflation_ratio": 1.7993754691005666
+          },
+          "scan": {
+            "internal_r2": 0.8824498305666462,
+            "external_r2": 0.9434171244768941,
+            "retained_r2_fraction": 1.0690886799435375,
+            "internal_mae": 0.1705439081617554,
+            "external_mae": 0.1432061379443399,
+            "mae_inflation_ratio": 0.8397024525116047
+          }
+        },
+        "ExtraTrees": {
+          "pbe": {
+            "internal_r2": 0.9002228412987979,
+            "external_r2": 0.9674764641171676,
+            "retained_r2_fraction": 1.0747077498292972,
+            "internal_mae": 0.1435697947354156,
+            "external_mae": 0.07458590703680588,
+            "mae_inflation_ratio": 0.5195097421032053
+          },
+          "pbesol": {
+            "internal_r2": 0.9002228412987979,
+            "external_r2": 0.7970813997286248,
+            "retained_r2_fraction": 0.8854267667532567,
+            "internal_mae": 0.1435697947354156,
+            "external_mae": 0.317897298308914,
+            "mae_inflation_ratio": 2.214235235863965
+          },
+          "scan": {
+            "internal_r2": 0.9002228412987979,
+            "external_r2": 0.9498339654196946,
+            "retained_r2_fraction": 1.0551098259730003,
+            "internal_mae": 0.1435697947354156,
+            "external_mae": 0.14444767337538644,
+            "mae_inflation_ratio": 1.0061146471762301
+          }
+        },
+        "GradientBoosting": {
+          "pbe": {
+            "internal_r2": 0.8856935737719216,
+            "external_r2": 0.9438790898395878,
+            "retained_r2_fraction": 1.0656948608307841,
+            "internal_mae": 0.1753103659106942,
+            "external_mae": 0.12737634250849483,
+            "mae_inflation_ratio": 0.7265762172522205
+          },
+          "pbesol": {
+            "internal_r2": 0.8856935737719216,
+            "external_r2": 0.8013879436480033,
+            "retained_r2_fraction": 0.9048139981812399,
+            "internal_mae": 0.1753103659106942,
+            "external_mae": 0.30489045598465514,
+            "mae_inflation_ratio": 1.7391467663695996
+          },
+          "scan": {
+            "internal_r2": 0.8856935737719216,
+            "external_r2": 0.9408346645516812,
+            "retained_r2_fraction": 1.0622575260932843,
+            "internal_mae": 0.1753103659106942,
+            "external_mae": 0.14854127988252905,
+            "mae_inflation_ratio": 0.8473046023884193
+          }
+        },
+        "AdaBoost": {
+          "pbe": {
+            "internal_r2": 0.7126366062328963,
+            "external_r2": 0.6827270193645447,
+            "retained_r2_fraction": 0.9580296793530463,
+            "internal_mae": 0.3581793390639505,
+            "external_mae": 0.3260264806813892,
+            "mae_inflation_ratio": 0.910232515179161
+          },
+          "pbesol": {
+            "internal_r2": 0.7126366062328963,
+            "external_r2": 0.81179919943268,
+            "retained_r2_fraction": 1.1391488906582725,
+            "internal_mae": 0.3581793390639505,
+            "external_mae": 0.25471244428945383,
+            "mae_inflation_ratio": 0.7111310355173128
+          },
+          "scan": {
+            "internal_r2": 0.7126366062328963,
+            "external_r2": 0.7729877857409668,
+            "retained_r2_fraction": 1.084687172929687,
+            "internal_mae": 0.3581793390639505,
+            "external_mae": 0.3149609609464057,
+            "mae_inflation_ratio": 0.8793387183345367
+          }
+        },
+        "SVR": {
+          "pbe": {
+            "internal_r2": 0.8850218467729172,
+            "external_r2": 0.9322710692050633,
+            "retained_r2_fraction": 1.0533876339939319,
+            "internal_mae": 0.15121260934709246,
+            "external_mae": 0.10753678253612697,
+            "mae_inflation_ratio": 0.7111627991901636
+          },
+          "pbesol": {
+            "internal_r2": 0.8850218467729172,
+            "external_r2": 0.8029706666242474,
+            "retained_r2_fraction": 0.9072890907180929,
+            "internal_mae": 0.15121260934709246,
+            "external_mae": 0.3087432087956798,
+            "mae_inflation_ratio": 2.04178216438943
+          },
+          "scan": {
+            "internal_r2": 0.8850218467729172,
+            "external_r2": 0.9550801935708041,
+            "retained_r2_fraction": 1.0791600196688285,
+            "internal_mae": 0.15121260934709246,
+            "external_mae": 0.137927202491275,
+            "mae_inflation_ratio": 0.9121408795656569
+          }
+        },
+        "kNN": {
+          "pbe": {
+            "internal_r2": 0.7970298450682741,
+            "external_r2": 0.9127480122460724,
+            "retained_r2_fraction": 1.1451867428727036,
+            "internal_mae": 0.2722088868323008,
+            "external_mae": 0.1322794427624654,
+            "mae_inflation_ratio": 0.4859482888373094
+          },
+          "pbesol": {
+            "internal_r2": 0.7970298450682741,
+            "external_r2": 0.7790033303213199,
+            "retained_r2_fraction": 0.9773828861510072,
+            "internal_mae": 0.2722088868323008,
+            "external_mae": 0.31851110525661597,
+            "mae_inflation_ratio": 1.1700981145881562
+          },
+          "scan": {
+            "internal_r2": 0.7970298450682741,
+            "external_r2": 0.9302994369082067,
+            "retained_r2_fraction": 1.1672077810693735,
+            "internal_mae": 0.2722088868323008,
+            "external_mae": 0.15315998625546923,
+            "mae_inflation_ratio": 0.5626560838545517
+          }
+        },
+        "GaussianProcess": {
+          "pbe": {
+            "internal_r2": 0.8758040116084383,
+            "external_r2": 0.902670563540321,
+            "retained_r2_fraction": 1.0306764431034536,
+            "internal_mae": 0.17344826063707652,
+            "external_mae": 0.15475727788225585,
+            "mae_inflation_ratio": 0.892238857362025
+          },
+          "pbesol": {
+            "internal_r2": 0.8758040116084383,
+            "external_r2": 0.7970958077553596,
+            "retained_r2_fraction": 0.910130345591214,
+            "internal_mae": 0.17344826063707652,
+            "external_mae": 0.30557627285575506,
+            "mae_inflation_ratio": 1.761771906696392
+          },
+          "scan": {
+            "internal_r2": 0.8758040116084383,
+            "external_r2": 0.944741649599452,
+            "retained_r2_fraction": 1.078713544442903,
+            "internal_mae": 0.17344826063707652,
+            "external_mae": 0.1456697675804985,
+            "mae_inflation_ratio": 0.839845652216128
+          }
+        },
+        "Ridge": {
+          "pbe": {
+            "internal_r2": 0.8277791859730768,
+            "external_r2": 0.7946211630467556,
+            "retained_r2_fraction": 0.9599433961517853,
+            "internal_mae": 0.2567967418220672,
+            "external_mae": 0.25760250292020004,
+            "mae_inflation_ratio": 1.0031377387906704
+          },
+          "pbesol": {
+            "internal_r2": 0.8277791859730768,
+            "external_r2": 0.7888113072539783,
+            "retained_r2_fraction": 0.9529247903554248,
+            "internal_mae": 0.2567967418220672,
+            "external_mae": 0.2868509659507238,
+            "mae_inflation_ratio": 1.1170350679506713
+          },
+          "scan": {
+            "internal_r2": 0.8277791859730768,
+            "external_r2": 0.8647670664534011,
+            "retained_r2_fraction": 1.0446832695326158,
+            "internal_mae": 0.2567967418220672,
+            "external_mae": 0.2333700311883627,
+            "mae_inflation_ratio": 0.9087733338535241
+          }
+        },
+        "Lasso": {
+          "pbe": {
+            "internal_r2": 0.8231798685629912,
+            "external_r2": 0.7926656846473686,
+            "retained_r2_fraction": 0.9629313287642827,
+            "internal_mae": 0.26376954296689714,
+            "external_mae": 0.26196283212653326,
+            "mae_inflation_ratio": 0.9931504190360954
+          },
+          "pbesol": {
+            "internal_r2": 0.8231798685629912,
+            "external_r2": 0.7926977045801828,
+            "retained_r2_fraction": 0.9629702266212845,
+            "internal_mae": 0.26376954296689714,
+            "external_mae": 0.2823300511351099,
+            "mae_inflation_ratio": 1.070366381044009
+          },
+          "scan": {
+            "internal_r2": 0.8231798685629912,
+            "external_r2": 0.8656064899546172,
+            "retained_r2_fraction": 1.0515399161372707,
+            "internal_mae": 0.26376954296689714,
+            "external_mae": 0.2317807979436495,
+            "mae_inflation_ratio": 0.8787246447658963
+          }
+        },
+        "MLP": {
+          "pbe": {
+            "internal_r2": 0.854042149256087,
+            "external_r2": 0.8519894726955428,
+            "retained_r2_fraction": 0.9975965160942792,
+            "internal_mae": 0.20840137684190094,
+            "external_mae": 0.177534498312325,
+            "mae_inflation_ratio": 0.8518873579564094
+          },
+          "pbesol": {
+            "internal_r2": 0.854042149256087,
+            "external_r2": 0.7645663313522948,
+            "retained_r2_fraction": 0.8952325503117966,
+            "internal_mae": 0.20840137684190094,
+            "external_mae": 0.3190676790237967,
+            "mae_inflation_ratio": 1.531024813074293
+          },
+          "scan": {
+            "internal_r2": 0.854042149256087,
+            "external_r2": 0.9101269697154467,
+            "retained_r2_fraction": 1.0656698507306839,
+            "internal_mae": 0.20840137684190094,
+            "external_mae": 0.17748451710397325,
+            "mae_inflation_ratio": 0.851647526487399
+          }
+        }
+      },
+      "band_gap": {
+        "XGBoost": {
+          "pbe": {
+            "internal_r2": 0.8215951235778265,
+            "external_r2": 0.7094313919155862,
+            "retained_r2_fraction": 0.8634805289814802,
+            "internal_mae": 0.3896451530975078,
+            "external_mae": 0.5783597636475294,
+            "mae_inflation_ratio": 1.4843242859556274
+          },
+          "pbesol": {
+            "internal_r2": 0.8215951235778265,
+            "external_r2": 0.8802698849298958,
+            "retained_r2_fraction": 1.0714156640761894,
+            "internal_mae": 0.3896451530975078,
+            "external_mae": 0.4482802091421741,
+            "mae_inflation_ratio": 1.150483216789798
+          },
+          "scan": {
+            "internal_r2": 0.8215951235778265,
+            "external_r2": 0.8270590468892435,
+            "retained_r2_fraction": 1.0066503843007528,
+            "internal_mae": 0.3896451530975078,
+            "external_mae": 0.6577191294643446,
+            "mae_inflation_ratio": 1.6879951520909897
+          }
+        },
+        "RandomForest": {
+          "pbe": {
+            "internal_r2": 0.7853814694319879,
+            "external_r2": 0.6947456954826181,
+            "retained_r2_fraction": 0.8845964954903757,
+            "internal_mae": 0.43279764205708254,
+            "external_mae": 0.5980278550747706,
+            "mae_inflation_ratio": 1.3817724427340932
+          },
+          "pbesol": {
+            "internal_r2": 0.7853814694319879,
+            "external_r2": 0.8736548901564047,
+            "retained_r2_fraction": 1.1123955990306964,
+            "internal_mae": 0.43279764205708254,
+            "external_mae": 0.45386087667083164,
+            "mae_inflation_ratio": 1.0486676279326195
+          },
+          "scan": {
+            "internal_r2": 0.7853814694319879,
+            "external_r2": 0.8211917311513532,
+            "retained_r2_fraction": 1.0455960104906274,
+            "internal_mae": 0.43279764205708254,
+            "external_mae": 0.6665349512880212,
+            "mae_inflation_ratio": 1.5400614202054979
+          }
+        },
+        "ExtraTrees": {
+          "pbe": {
+            "internal_r2": 0.8275981361772146,
+            "external_r2": 0.7106076802020035,
+            "retained_r2_fraction": 0.8586385700243291,
+            "internal_mae": 0.3602575878745537,
+            "external_mae": 0.5013893988151537,
+            "mae_inflation_ratio": 1.391752500684993
+          },
+          "pbesol": {
+            "internal_r2": 0.8275981361772146,
+            "external_r2": 0.8721591991900116,
+            "retained_r2_fraction": 1.0538438416725182,
+            "internal_mae": 0.3602575878745537,
+            "external_mae": 0.3862483078950478,
+            "mae_inflation_ratio": 1.0721448233022213
+          },
+          "scan": {
+            "internal_r2": 0.8275981361772146,
+            "external_r2": 0.8484144484151309,
+            "retained_r2_fraction": 1.025152681389629,
+            "internal_mae": 0.3602575878745537,
+            "external_mae": 0.5736553876829661,
+            "mae_inflation_ratio": 1.5923478283064512
+          }
+        },
+        "GradientBoosting": {
+          "pbe": {
+            "internal_r2": 0.7778287855745198,
+            "external_r2": 0.6525480445863191,
+            "retained_r2_fraction": 0.8389353244420417,
+            "internal_mae": 0.4718879029479375,
+            "external_mae": 0.6905699715556539,
+            "mae_inflation_ratio": 1.463419526632458
+          },
+          "pbesol": {
+            "internal_r2": 0.7778287855745198,
+            "external_r2": 0.8189252582569203,
+            "retained_r2_fraction": 1.0528348570335382,
+            "internal_mae": 0.4718879029479375,
+            "external_mae": 0.601796668063221,
+            "mae_inflation_ratio": 1.2752958156030885
+          },
+          "scan": {
+            "internal_r2": 0.7778287855745198,
+            "external_r2": 0.7296371507892726,
+            "retained_r2_fraction": 0.938043389909192,
+            "internal_mae": 0.4718879029479375,
+            "external_mae": 0.8518163279142296,
+            "mae_inflation_ratio": 1.8051243157386234
+          }
+        },
+        "AdaBoost": {
+          "pbe": {
+            "internal_r2": 0.5561798246277856,
+            "external_r2": 0.4062874318310141,
+            "retained_r2_fraction": 0.7304965297921683,
+            "internal_mae": 0.7777915043685975,
+            "external_mae": 0.9968184186772893,
+            "mae_inflation_ratio": 1.2816010628535928
+          },
+          "pbesol": {
+            "internal_r2": 0.5561798246277856,
+            "external_r2": 0.5458397754910922,
+            "retained_r2_fraction": 0.9814088021916054,
+            "internal_mae": 0.7777915043685975,
+            "external_mae": 1.0290768355328725,
+            "mae_inflation_ratio": 1.32307543827991
+          },
+          "scan": {
+            "internal_r2": 0.5561798246277856,
+            "external_r2": 0.4824904494452905,
+            "retained_r2_fraction": 0.8675080038514333,
+            "internal_mae": 0.7777915043685975,
+            "external_mae": 1.2030241934855963,
+            "mae_inflation_ratio": 1.5467180944104013
+          }
+        },
+        "SVR": {
+          "pbe": {
+            "internal_r2": 0.7289455498406664,
+            "external_r2": 0.5343946411350617,
+            "retained_r2_fraction": 0.7331063908022626,
+            "internal_mae": 0.4959895184938383,
+            "external_mae": 0.7032926001525225,
+            "mae_inflation_ratio": 1.417958593738427
+          },
+          "pbesol": {
+            "internal_r2": 0.7289455498406664,
+            "external_r2": 0.7754695079634104,
+            "retained_r2_fraction": 1.0638236396846283,
+            "internal_mae": 0.4959895184938383,
+            "external_mae": 0.5959365814717048,
+            "mae_inflation_ratio": 1.2015104336909654
+          },
+          "scan": {
+            "internal_r2": 0.7289455498406664,
+            "external_r2": 0.7027680790484578,
+            "retained_r2_fraction": 0.9640885786353584,
+            "internal_mae": 0.4959895184938383,
+            "external_mae": 0.8131132701793133,
+            "mae_inflation_ratio": 1.6393759139275332
+          }
+        },
+        "kNN": {
+          "pbe": {
+            "internal_r2": 0.6399826654637306,
+            "external_r2": 0.5003245131998075,
+            "retained_r2_fraction": 0.7817782265044211,
+            "internal_mae": 0.5766182392471384,
+            "external_mae": 0.6978515384768046,
+            "mae_inflation_ratio": 1.2102488110468972
+          },
+          "pbesol": {
+            "internal_r2": 0.6399826654637306,
+            "external_r2": 0.7760879759401338,
+            "retained_r2_fraction": 1.2126703078399497,
+            "internal_mae": 0.5766182392471384,
+            "external_mae": 0.5209483482066907,
+            "mae_inflation_ratio": 0.903454508977841
+          },
+          "scan": {
+            "internal_r2": 0.6399826654637306,
+            "external_r2": 0.7375477648336255,
+            "retained_r2_fraction": 1.1524495968952524,
+            "internal_mae": 0.5766182392471384,
+            "external_mae": 0.7146729644487555,
+            "mae_inflation_ratio": 1.2394213637464335
+          }
+        },
+        "GaussianProcess": {
+          "pbe": {
+            "internal_r2": 0.734841469202075,
+            "external_r2": 0.5768565766249458,
+            "retained_r2_fraction": 0.785008196735717,
+            "internal_mae": 0.517846881667651,
+            "external_mae": 0.7222218575900332,
+            "mae_inflation_ratio": 1.3946629460511997
+          },
+          "pbesol": {
+            "internal_r2": 0.734841469202075,
+            "external_r2": 0.8216683934689193,
+            "retained_r2_fraction": 1.1181573548933281,
+            "internal_mae": 0.517846881667651,
+            "external_mae": 0.5793207527996683,
+            "mae_inflation_ratio": 1.1187105171591447
+          },
+          "scan": {
+            "internal_r2": 0.734841469202075,
+            "external_r2": 0.7397747013728442,
+            "retained_r2_fraction": 1.0067133284899201,
+            "internal_mae": 0.517846881667651,
+            "external_mae": 0.7913024803344698,
+            "mae_inflation_ratio": 1.5280626539377713
+          }
+        },
+        "Ridge": {
+          "pbe": {
+            "internal_r2": 0.46537218670417746,
+            "external_r2": 0.18933158005165762,
+            "retained_r2_fraction": 0.40683905368846157,
+            "internal_mae": 0.8176975521315795,
+            "external_mae": 1.107065253595238,
+            "mae_inflation_ratio": 1.3538810905197562
+          },
+          "pbesol": {
+            "internal_r2": 0.46537218670417746,
+            "external_r2": 0.39569842330142957,
+            "retained_r2_fraction": 0.8502837827585142,
+            "internal_mae": 0.8176975521315795,
+            "external_mae": 1.0999424862363132,
+            "mae_inflation_ratio": 1.345170330238822
+          },
+          "scan": {
+            "internal_r2": 0.46537218670417746,
+            "external_r2": 0.2838584073913788,
+            "retained_r2_fraction": 0.6099599750507194,
+            "internal_mae": 0.8176975521315795,
+            "external_mae": 1.364854512519405,
+            "mae_inflation_ratio": 1.6691434491414252
+          }
+        },
+        "Lasso": {
+          "pbe": {
+            "internal_r2": 0.4628603486207251,
+            "external_r2": 0.17598326366666273,
+            "retained_r2_fraction": 0.38020812150160244,
+            "internal_mae": 0.8155047883442961,
+            "external_mae": 1.117135928952112,
+            "mae_inflation_ratio": 1.369870471539734
+          },
+          "pbesol": {
+            "internal_r2": 0.4628603486207251,
+            "external_r2": 0.38361988746109343,
+            "retained_r2_fraction": 0.8288026585216041,
+            "internal_mae": 0.8155047883442961,
+            "external_mae": 1.1043172190853217,
+            "mae_inflation_ratio": 1.354151728927792
+          },
+          "scan": {
+            "internal_r2": 0.4628603486207251,
+            "external_r2": 0.2740237401780842,
+            "retained_r2_fraction": 0.5920224987831555,
+            "internal_mae": 0.8155047883442961,
+            "external_mae": 1.3601034549860727,
+            "mae_inflation_ratio": 1.6678056026469996
+          }
+        },
+        "MLP": {
+          "pbe": {
+            "internal_r2": 0.6929788925944149,
+            "external_r2": 0.5297227917020162,
+            "retained_r2_fraction": 0.7644140353522298,
+            "internal_mae": 0.5643681539560885,
+            "external_mae": 0.7614243358476479,
+            "mae_inflation_ratio": 1.3491624757886174
+          },
+          "pbesol": {
+            "internal_r2": 0.6929788925944149,
+            "external_r2": 0.7986077537774814,
+            "retained_r2_fraction": 1.1524272417412411,
+            "internal_mae": 0.5643681539560885,
+            "external_mae": 0.5732581864193907,
+            "mae_inflation_ratio": 1.0157521865842096
+          },
+          "scan": {
+            "internal_r2": 0.6929788925944149,
+            "external_r2": 0.7288253258143871,
+            "retained_r2_fraction": 1.0517280303960892,
+            "internal_mae": 0.5643681539560885,
+            "external_mae": 0.7676776119231256,
+            "mae_inflation_ratio": 1.3602426120997178
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+python==3.11
+numpy==2.4.6
+pandas==2.3.3
+scikit-learn==1.9.1
+xgboost==3.2.0
+scipy
+matplotlib
+pymatgen==2026.5.4
+matminer==0.10.1
+mp-api
+ijson
+pyarrow
