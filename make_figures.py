@@ -100,8 +100,8 @@ def _parity(target, fname, xlabel_prefix, fig_name, xlim_override=None):
         ax.set_ylim(lims)
         r2 = BENCH[target]["XGBoost"]["external"][f]["r2"]
         ax.set_title(f"Alexandria {FUNCTIONAL_LABELS[f]}\n$R^2$={r2:.3f}")
-        ax.set_xlabel(f"DFT {xlabel_prefix}", fontsize=8)
-    axes[0].set_ylabel(f"XGBoost-predicted {xlabel_prefix}\n(trained on Materials Project only)", fontsize=8)
+        ax.set_xlabel(f"DFT {xlabel_prefix}", fontsize=9)
+    axes[0].set_ylabel(f"Predicted {xlabel_prefix}", fontsize=9)
     fig.tight_layout()
     save(fig, fig_name)
 
